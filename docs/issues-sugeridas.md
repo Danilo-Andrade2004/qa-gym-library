@@ -31,7 +31,7 @@ Este documento lista as issues disponíveis para implementação. Escolha uma, a
 | 14 | Impedir empréstimo para usuário inativo | `LoanService` |
 | 15 | Calcular atraso de devolução | `Loan` |
 | 16 | Calcular multa por atraso | `Loan` |
-| 17 | Criar relatório de livros por autor | `ReportService` |
+| 17 | Criar relatório de livros por autor | `ReportService` | //concluído
 | 18 | Validar ISBN no formato correto | `BookValidator` |
 | 19 | Implementar ordenação por ano de publicação | `LibraryService` |
 | 20 | Implementar ordenação por autor | `LibraryService` |

@@ -23,8 +23,16 @@ public class ReportService {
     }
 
     public Map<String, Long> booksByAuthor(List<Book> books) {
-        // TODO: retornar mapa de autor -> quantidade de livros
-        return Map.of();
+        if (books == null || books.isEmpty()) {
+            return Map.of();
+        }
+
+        return books.stream()
+                .filter(book -> book.getAuthor() != null)
+                .collect(java.util.stream.Collectors.groupingBy(
+                        Book::getAuthor,
+                        java.util.stream.Collectors.counting()
+                ));
     }
 
     public int activeLoanCount(List<Loan> loans) {
